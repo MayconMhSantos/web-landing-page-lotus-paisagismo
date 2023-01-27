@@ -156,6 +156,7 @@ header nav ul li:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-bottom: 120px;
 }
 .section-about .content-about img{
     width: 400px;
@@ -193,7 +194,7 @@ header nav ul li:hover{
 /* About Frase */
 
 .section-about .about-frase p {
-    margin-top: 15rem;
+
     text-align: center;
     max-width: 65vw;
     font-size: 4rem;
@@ -201,6 +202,8 @@ header nav ul li:hover{
     text-align: center;
     letter-spacing: -1.6px;
     color: var(--secondary--color);
+    margin-bottom: 50px;
+
 }
 
 /* About Card's */
@@ -219,6 +222,7 @@ header nav ul li:hover{
     align-items: center;
     justify-content: center;
     gap: 50px;
+    margin-bottom: 80px;
 }
 .about-card{
     display: flex;
@@ -243,15 +247,11 @@ header nav ul li:hover{
 
 /*  Services All */
 
-.hr{
-     border: 1.2px solid var(--detail--color);
-
-}
 .section-services{
-    min-height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 }
 .section-services .content-services{
@@ -260,8 +260,8 @@ header nav ul li:hover{
     max-width: 70vw;
     display: flex;
     flex-direction: column;
-    text-align: center;
-
+    align-items: center;
+    justify-content: center;
 }
 .section-services .content-services h2{
     font-size: 11rem;
@@ -314,4 +314,153 @@ header nav ul li:hover{
     font-size: 17rem;
     line-height: 110px;
     color: #fff;
+}
+
+
+/* SLIDER */
+
+.content-slider-natural{
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 75px;
+
+}
+
+.content-slider-natural .text-slider {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.text-slider h2{
+font-size: 5rem;
+color: var(--primary--color);
+}
+.text-slider h3{
+    font-size: 2.5rem;
+    color: var(--secondary--color);
+}
+.text-slider p{
+    font-size: 2.2rem;
+    text-align: justify;
+    color: var(--secondary--color);
+}   
+
+.slider{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 14px 22px 5px rgba(0, 0, 0, 0.753);
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+.slide img{
+    width: 400px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 400px;
+    margin-top:  -40px;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgba(19, 18, 18, 0.596); */
+}
+
+.manual-btn{
+    border: 2px solid rgb(248, 247, 247);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border: 2px solid rgb(39, 11, 39);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 400px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+.content-slider-preservado{
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 120px;
+
+}
+
+.content-slider-preservado .text-slider {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
 }
