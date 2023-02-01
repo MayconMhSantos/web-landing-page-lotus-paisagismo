@@ -1,7 +1,8 @@
 let count = 1;
 document.getElementById("radio1").checked = true;
-document.getElementById("radio1preservado").checked = true;
 document.getElementById("radio1artificial").checked = true;
+document.getElementById("radio1preservado").checked = true;
+document.getElementById("radio1musgo").checked = true;
 
 
 
@@ -25,4 +26,9 @@ function nextImage(){
         count = 1;
     }
     document.getElementById("radio"+count+"artificial").checked = true
+
+    if(count>4){
+        count = 1;
+    }
+    document.getElementById("radio"+count+"musgo").checked = true
 }
