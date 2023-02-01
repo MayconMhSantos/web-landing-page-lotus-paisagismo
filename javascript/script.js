@@ -1,5 +1,9 @@
 let count = 1;
 document.getElementById("radio1").checked = true;
+document.getElementById("radio1preservado").checked = true;
+document.getElementById("radio1artificial").checked = true;
+
+
 
 setInterval( function(){
     nextImage()
@@ -10,5 +14,15 @@ function nextImage(){
     if(count>4){
         count = 1;
     }
-    document.getElementById("radio"+count).checked = true;
+    document.getElementById("radio"+count).checked = true
+
+    if(count>4){
+        count = 1;
+    }
+    document.getElementById("radio"+count+"preservado").checked = true
+
+    if(count>4){
+        count = 1;
+    }
+    document.getElementById("radio"+count+"artificial").checked = true
 }
