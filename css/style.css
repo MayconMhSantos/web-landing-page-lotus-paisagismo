@@ -16,9 +16,10 @@ html{
     scroll-behavior: smooth;
 }
 :root{
-    --primary--color:rgb(79, 126, 81);
-    --secondary--color:rgb(76, 77, 74);
-    --detail--color:rgb(15, 54, 15);
+    --primary--color:rgb(75, 129, 78);
+    --secondary--color:rgb(20, 20, 20);
+    --white--color:rgb(231, 231, 231);
+    --detail--color:rgb(37, 37, 37);
 
     --font--primary: "rosseta";
     --font--secondary: "atlantic-corse";
@@ -84,7 +85,7 @@ header nav ul li:hover{
 }
 .detail-color{
     color: #fff;
-    background-color: rgb(42, 141, 75);
+    background-color: var(--primary--color);
     padding: 0.5rem 2rem 0.5rem 2rem;
     border-radius: 22px;
 }
@@ -109,22 +110,23 @@ header nav ul li:hover{
 }
 .section-home .content-home h1{
     color: var(--primary--color);
-    font-size: 20rem;
+    font-size: 17rem;
+    line-height: 1;
 }
 .section-home .content-home h2{
-    color: var(--primary--color);
+    color: var(--white--color);
     font-size: 5rem;
 }
 .section-home .content-home p{
     max-width: 800px;
-    color: var(--secondary--color);
-    font-size: 3rem;
+    color: var(--primary--color);
+    font-size: 2.8rem;
 }
 .section-home .content-home input{
     position: absolute;
-    bottom: 180px;
+    bottom: 240px;
     padding: 2rem 3.5rem 2rem 3.5rem;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     border-radius: 17px;
     border: none;
     color: rgb(3, 36, 3);
@@ -136,39 +138,36 @@ header nav ul li:hover{
 .section-home .content-home input:hover{
     transform: scale(1.03);
     transition: all .3s;
-    background-color: transparent;
-    border: 2px solid var(--secondary--color);
-    color: var(--secondary--color);
+    background-color: var(--primary--color);
+    color: var(--white--color);
 }
 
 /* SECTION ABOUT */
 
 .section-about{
+    width: 100vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
 .section-about .content-about{
-    margin-top: 150px;
     display: flex;
-    gap: 5rem;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-bottom: 120px;
+    gap: 7vw;
+    margin: 150px 25px 120px 25px;
 }
 .section-about .content-about img{
-    width: 400px;
-    height: 500px;
-    border-top-left-radius: 150px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 150px;
+    width: 350px;
+    height: 450px;
+    border-radius: 17px;
     box-shadow: 6px 3px 22px 3px rgba(0, 0, 0, 0.9);
 }
 .section-about .content-about .presentation-text{
-    width: 600px;
+    max-width: 450px;
+    min-width: 300;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -177,33 +176,33 @@ header nav ul li:hover{
 
 }
 .section-about .content-about .presentation-text h2{
-    font-size: 11rem;
+    font-size: 8rem;
     line-height: 1;
-    color: var(--primary--color);
+    text-align: left;
+    color: var(--secondary--color--color);
 }
 .section-about .content-about .presentation-text h3{
-    font-size: 5rem;
+    font-size: 2.8rem;
+    text-align: left;
     color: var(--secondary--color);
 }
 .section-about .content-about .presentation-text p{
     text-align: justify;
-    font-size: 2.2rem;
-    color: var(--primary--color);
+    font-size: 2.1rem;
+    color: var(--secondary--color--color);
 }
 
 /* About Frase */
 
-.section-about .about-frase p {
-
+.section-about .about-frase-a h3 {
     text-align: center;
-    max-width: 65vw;
-    font-size: 4rem;
+    max-width: 66vw;
+    font-size: 2.8rem;
     font-weight: 600;
     text-align: center;
     letter-spacing: -1.6px;
     color: var(--secondary--color);
-    margin-bottom: 50px;
-
+    margin-bottom: 20px;
 }
 
 /* About Card's */
@@ -225,9 +224,14 @@ header nav ul li:hover{
     margin-bottom: 80px;
 }
 .about-card{
+    max-width: 275px;
+    min-width: 275px;
+    max-height: 275px;
+    min-height: 275px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 .about-card img{
     width: 75px;
@@ -240,9 +244,9 @@ header nav ul li:hover{
     color: var(--secondary--color);
 }
 .about-card p{
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     padding: 1rem;
-    color: var(--primary--color);
+    color: var(--secondary--color--color);
 }
 
 /*  Services All */
@@ -256,43 +260,22 @@ header nav ul li:hover{
 }
 .section-services .content-services{
     margin-bottom: 110px;
-    max-width: 70vw;
+    max-width: 66vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.section-services .content-services h2{
-    font-size: 11rem;
-    color: var(--secondary--color)  
-}
 .section-services .content-services h3{
-    font-size: 4rem;
-    color: var(--primary--color)
+    font-size: 2.8rem;
+    color: var(--secondary--color--color)
 }
 .section-services .content-services p{
     text-align: justify;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     color: var(--secondary--color) 
 } 
 
-.section-services .content-services-plant-project{
-    margin-bottom: 50px;
-    max-width: 70vw;
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-}
-.section-services .content-services-plant-project p{
-    text-align: justify;
-    font-size: 2.2rem;
-    color: var(--secondary--color) 
-}
-.section-services .content-services-plant-project h3{
-    font-size: 4rem;
-    color: var(--primary--color)
-}
 
 
 
@@ -300,7 +283,7 @@ header nav ul li:hover{
 .garden-img{
     position: relative;
     width: 100vw;
-    height: 35vh;
+    height: 30vh;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -315,7 +298,7 @@ header nav ul li:hover{
     background-image: linear-gradient(to right,rgba(171, 207, 178, 0.199),rgba(0, 0, 0, 0.856)),url("../img/background-garden-02a.png");
 }
 .section-services .garden-musgomoss{
-    background-image: linear-gradient(to right,rgba(171, 207, 178, 0.199),rgba(0, 0, 0, 0.856)),url("../img/background-garden-05a.png");
+    backgroun3.2remd-image: linear-gradient(to right,rgba(171, 207, 178, 0.199),rgba(0, 0, 0, 0.856)),url("../img/background-garden-05a.png");
 }
 .section-services .garden-artificial{
     background-image: linear-gradient(to right,rgba(171, 207, 178, 0.199),rgba(0, 0, 0, 0.856)),url("../img/background-garden-06a.png");
@@ -331,40 +314,41 @@ header nav ul li:hover{
     bottom: 0;
     display: flex;
     justify-content: center;
-    font-size: 12rem;
-    line-height: 80px;
+    font-size: 9rem;
+    line-height: 60px;
     color: #fff;
 }
 
 
 /* SLIDER */
 
-.content-slider-natural{
+.content-slider{
     width: 70vw;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 15px;
     margin-bottom: 125px;
 }
 
-.content-slider-natural .text-slider {
-    width: 30vw;
+.content-slider .text-slider {
+    width: 32vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .text-slider h2{
-font-size: 5rem;
-color: var(--primary--color);
+font-size: 4.7rem;
+color: var(--secondary--color--color);
 }
 .text-slider h3{
-    font-size: 2.52rem;
+    font-size: 2.8rem;
     color: var(--secondary--color);
 }
 .text-slider p{
-    font-size: 2.25rem;
+    font-size: 2.1rem;
     text-align: justify;
     color: var(--secondary--color);
 }   
@@ -373,13 +357,10 @@ color: var(--primary--color);
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 7px 14px 22px 5px rgba(0, 0, 0, 0.753);
-
 }
 .slides{
     width: 400%;
     height: 33vh;
-    /* max-height: 400px; */
-    /* overflow: hidden; */
     display: flex;
 }
 .slides input{
@@ -392,6 +373,7 @@ color: var(--primary--color);
 }
 .slide img{
     width: 30vw;
+    min-height: 33vh;
 }
 .manual-navigation{
     position: absolute;
@@ -469,7 +451,7 @@ color: var(--primary--color);
 
 }
 
-.img-planta-projeto{
+/* .img-planta-projeto{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -485,4 +467,5 @@ color: var(--primary--color);
     height: 70vh;
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
+
