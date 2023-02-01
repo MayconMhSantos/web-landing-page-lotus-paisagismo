@@ -424,7 +424,7 @@ color: var(--secondary--color--color);
 .navigation-auto{
     position: absolute;
     width: 30vw;
-    margin-top: 264px;
+    margin-top: 283px;
     display: flex;
     justify-content: center;
 }
