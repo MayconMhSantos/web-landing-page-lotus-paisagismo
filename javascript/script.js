@@ -8,7 +8,7 @@ document.getElementById("radio1musgo").checked = true;
 
 setInterval( function(){
     nextImage()
-}, 2000)
+}, 4000)
 
 function nextImage(){
     count++;

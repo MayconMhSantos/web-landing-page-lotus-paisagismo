@@ -176,19 +176,19 @@ header nav ul li:hover{
 
 }
 .section-about .content-about .presentation-text h2{
-    font-size: 8rem;
+    font-size: 4.7rem;
     line-height: 1;
     text-align: left;
     color: var(--secondary--color--color);
 }
 .section-about .content-about .presentation-text h3{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     text-align: left;
     color: var(--secondary--color);
 }
 .section-about .content-about .presentation-text p{
     text-align: justify;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     color: var(--secondary--color--color);
 }
 
@@ -223,10 +223,10 @@ header nav ul li:hover{
     margin-bottom: 80px;
 }
 .about-card{
-    max-width: 275px;
-    min-width: 275px;
-    max-height: 275px;
-    min-height: 275px;
+    max-width: 265px;
+    min-width: 265px;
+    max-height: 225px;
+    min-height: 225px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,13 +237,13 @@ header nav ul li:hover{
     height: 75px;
 }
 .about-card h3{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 600;
     padding: 1rem;
     color: var(--secondary--color);
 }
 .about-card p{
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     padding: 1rem;
     color: var(--secondary--color--color);
 }
@@ -331,11 +331,11 @@ font-size: 4.7rem;
 color: var(--secondary--color--color);
 }
 .text-slider h3{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     color: var(--secondary--color);
 }
 .text-slider p{
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     text-align: justify;
     color: var(--secondary--color);
 }   
@@ -347,7 +347,7 @@ color: var(--secondary--color--color);
 }
 .slides{
     width: 400%;
-    height: 400px;
+    height: 500px;
     display: flex;
 }
 .slides input{
@@ -411,7 +411,7 @@ color: var(--secondary--color--color);
 .navigation-auto{
     position: absolute;
     width: 30vw;
-    margin-top: 360px;
+    margin-top: 460px;
     display: flex;
     justify-content: center;
 }
@@ -527,7 +527,7 @@ color: var(--secondary--color--color);
     text-align: center;
     max-width: 100vw;
     padding: 75px 20% 75px 20%;
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     font-weight: 600;
     text-align: center;
     letter-spacing: -1.6px;
@@ -577,11 +577,11 @@ color: var(--secondary--color--color);
 }
 
 .img-planta-projeto .content-img-planta h2{
-    font-size: 4.7rem;
+    font-size: 2.5rem;
 }
 
 .img-planta-projeto .content-img-planta p{
-    font-size: 2.2rem;
+    font-size: 1.9rem;
 }
 
 .img-planta-projeto .content-img-planta img{
