@@ -21,6 +21,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#formulario">Orçamento</a></li>
                     <li><a href="#contact" class="detail-color">Contact</a></li>
                 </ul>
             </nav>
@@ -100,7 +101,7 @@
                 </div>
                 <!-- Natural -->
                 <div class="content-slider">
-                    <div class="text-slider">
+                    <div class="text-slider" id="natural">
                         <h2>Natural</h2>
                         <h3>Jardim Natural Vertical</h3>
                         <p>❝O Jardim Natural Vertical é uma solução incrível para quem quer trazer a natureza para perto e transformar a sua cidade em um lugar ainda mais verde e vibrante! É composto por uma estrutura que sustenta várias espécies de plantas e flores, criando uma verdadeira parede de natureza. <br> <br>
@@ -178,7 +179,7 @@
                             <label for="radio4artificial" class="manual-btn"></label>
                         </div>
                     </div>
-                    <div class="text-slider">
+                    <div class="text-slider" id="artificial">
                         <h2>Artificial</h2>
                         <h3>Jardim Artificial Vertical</h3>
                         <p>❝é simplesmente encantador! É uma solução inovadora e cheia de personalidade que trará um toque de natureza e beleza a qualquer espaço, seja ele urbano ou interno. <br><br>
@@ -192,7 +193,7 @@
                     <h3>"Você sabia que a jardinagem não é apenas um passatempo agradável, mas também pode ter efeitos positivos surpreendentes na sua saúde e bem-estar? Cultivar plantas e cuidar do seu jardim pode ajudar a reduzir o estresse, melhorar a concentração e aumentar a sensação de felicidade."</h3>
                 </div>
                 <!-- Preservado -->
-                <div class="content-slider">
+                <div class="content-slider" id="preservado">
                     <div class="text-slider">
                         <h2>Preservado</h2>
                         <h3>Jardim Preservado Vertical</h3>
@@ -276,7 +277,7 @@
                             <label for="radio4musgo" class="manual-btn"></label>
                         </div>
                     </div>
-                    <div class="text-slider">
+                    <div class="text-slider" id="musgo">
                         <h2>Musgo Moss</h2>
                         <h3>Jardim Musgo Moss Vertical</h3>
                         <p>❝O Musgo Mos é uma planta incrivelmente versátil e fácil de cuidar, que pode ser usada para criar um jardim vertical ou decorar outros espaços. Ele é conhecido por sua aparência macia e verde vibrante, que adiciona uma sensação de calma e tranquilidade a qualquer ambiente.<br> <br>
@@ -335,155 +336,252 @@
                     </div>
                 </div> 
             </section>
-
-            <section id="contact">
+            <section class="section-form" id="formulario">
+                <div class="garden-form garden-img-form">
+                    <h2>Orçamento</h2>
+                </div>
+                <div class="content-orçamento-div">
+                    <div class="orcamento-content">
+                        <img src="img/logo2.png" alt="">
+                        <h2>LOTUS</h2>
+                        <h3>Paisagismo e Conservação.</h3>
+                        <p>Estamos aguardando seu orçamento para atender suas necessidades e ajudalo da melhor forma possivel. Preencha o formulario com nome, telefone, email e nos de uma breve explicação de sua necessidade para nos ajudar logo de primeiro momento.</p>
+                    </div>
+                    
+                    <form action="" id="form">
+                        <header class="header-form">
+                            <h2>Direto para nosso Whatsapp!</h2>
+                        </header>               
+                        <!-- USERNAME -->
+                        <div class="form-control">
+                            <label for="">Digite Seu nome</label>
+                            <input type="text" id="username" placeholder="Digite seu nome"/>
+                            <small></small>
+                        </div>             
+                        <!-- EMAIL -->
+                        <div class="form-control">
+                            <label for="">Digite Seu E-mail</label>
+                            <input type="email" id="txtemail" placeholder="Digite E-mail"  />
+                            <small></small>
+                        </div>              
+                        <!-- PHONE -->
+                        <div class="form-control">
+                            <label for="">Numero de Telefone</label>
+                            <input type="text" id="phone" placeholder="Numero de telefone" maxlength="15" />
+                            <small></small>
+                        </div>               
+                        <!-- SERVIÇOS -->
+                        <div class="form-control-servicos">
+                            <select name="servicos" id="servicos" value="Serviços" >
+                            <option value="Serviços de Jardinagem">Serviços de Jardinagem</option>
+                            <option value="Serviços de Paisagismo">Serviços de Paisagismo</option>
+                            <option value="Serviços de Roçagem">Serviços de Roçagem</option>
+                            <option value="Projetos">Projetos</option>
+                            <option value="Outros Serviços">Outros Serviços</option>
+                            </select>
+                            <small></small>
+                        </div>              
+                        <!-- TXTAREA -->
+                        <div class="form-control">
+                            <textarea name="txtarea" id="txtarea" cols="30" rows="5" ></textarea>
+                            <small></small>
+                        </div>              
+                        <!-- BTNENVIAR -->
+                        <button type="submit" id="btnEnviar">Enviar</button>
+                    </form>
+                </div>
+            </section>
+            <section class="section-card-clientes" id="clientes"> 
+                <!-- <div class="text-clientes">
+                    <h2>Nossos Clientes</h2>
+                    <p>É com imensa gratidão que agradecemos a confiança de nossos amados clientes em nossos trabalhos, dedicado a transformar seu jardim em um paraíso verde com paixão e excelência!</p>
+                </div> -->
+                <div class="container-cards-swiper">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content-card-swiper">
+                                    <img src="img/profile-pic.png" alt="">
+                                    <div class="text-description">
+                                        <h3>Gabriel de Souza</h3>
+                                        <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
+                                    </div>
+                                    <div class="stars-card">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-card-swiper">
+                                    <img src="img/profile-pic.png" alt="">
+                                    <div class="text-description">
+                                        <h3>Alfredo Mathos</h3>
+                                        <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
+                                    </div>
+                                    <div class="stars-card">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-card-swiper">
+                                    <img src="img/profile-pic.png" alt="">
+                                    <div class="text-description">
+                                        <h3>Jessica Matos</h3>
+                                        <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
+                                    </div>
+                                    <div class="stars-card">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-card-swiper">
+                                    <img src="img/profile-pic.png" alt="">
+                                    <div class="text-description">
+                                        <h3>Ana Carolina</h3>
+                                        <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
+                                    </div>
+                                    <div class="stars-card">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-card-swiper">
+                                    <img src="img/profile-pic.png" alt="">
+                                    <div class="text-description">
+                                        <h3>Matheus Bernardo</h3>
+                                        <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
+                                    </div>
+                                    <div class="stars-card">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-card-swiper">
+                                    <img src="img/profile-pic.png" alt="">
+                                    <div class="text-description">
+                                        <h3>Fernanda Dias</h3>
+                                        <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
+                                    </div>
+                                    <div class="stars-card">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-card-swiper">
+                                    <img src="img/profile-pic.png" alt="">
+                                    <div class="text-description">
+                                        <h3>Maria Souza</h3>
+                                        <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
+                                    </div>
+                                    <div class="stars-card">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-card-swiper">
+                                    <img src="img/profile-pic.png" alt="">
+                                    <div class="text-description">
+                                        <h3>Jose dos Santos</h3>
+                                        <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
+                                    </div>
+                                    <div class="stars-card">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-card-swiper">
+                                    <img src="img/profile-pic.png" alt="">
+                                    <div class="text-description">
+                                        <h3>Gustavo Oliveira</h3>
+                                        <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
+                                    </div>
+                                    <div class="stars-card">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                        <img src="img/estrela.png" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>   
+                </div>
             </section>
         </main>
-        <section class="section-card-clientes"> 
-            <div class="text-clientes">
-                <h2>Nossos Clientes</h2>
-                <p>É com imensa gratidão que agradecemos a confiança de nossos amados clientes em nossos trabalhos, dedicado a transformar seu jardim em um paraíso verde com paixão e excelência!</p>
+        <footer class="footer-contact" id="contact">
+            <div class="container-contact" >
+                <h2 class="contact-h2">Contact.</h2>
+                <p class="contact-p" id="type3">As conquistas dependem de 50% de inspiração, criatividade e
+                sonhos, e 50% de disciplina, trabalho árduo e determinação. São duas pernas que devem
+                caminhar juntas.</p>
             </div>
-            <div class="container-cards-swiper">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="content-card-swiper">
-                                <img src="img/profile-pic.png" alt="">
-                                <div class="text-description">
-                                    <h3>Gabriel de Souza</h3>
-                                    <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
-                                </div>
-                                <div class="stars-card">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content-card-swiper">
-                                <img src="img/profile-pic.png" alt="">
-                                <div class="text-description">
-                                    <h3>Alfredo Mathos</h3>
-                                    <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
-                                </div>
-                                <div class="stars-card">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content-card-swiper">
-                                <img src="img/profile-pic.png" alt="">
-                                <div class="text-description">
-                                    <h3>Jessica Matos</h3>
-                                    <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
-                                </div>
-                                <div class="stars-card">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content-card-swiper">
-                                <img src="img/profile-pic.png" alt="">
-                                <div class="text-description">
-                                    <h3>Ana Carolina</h3>
-                                    <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
-                                </div>
-                                <div class="stars-card">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content-card-swiper">
-                                <img src="img/profile-pic.png" alt="">
-                                <div class="text-description">
-                                    <h3>Matheus Bernardo</h3>
-                                    <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
-                                </div>
-                                <div class="stars-card">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content-card-swiper">
-                                <img src="img/profile-pic.png" alt="">
-                                <div class="text-description">
-                                    <h3>Fernanda Dias</h3>
-                                    <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
-                                </div>
-                                <div class="stars-card">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content-card-swiper">
-                                <img src="img/profile-pic.png" alt="">
-                                <div class="text-description">
-                                    <h3>Maria Souza</h3>
-                                    <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
-                                </div>
-                                <div class="stars-card">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content-card-swiper">
-                                <img src="img/profile-pic.png" alt="">
-                                <div class="text-description">
-                                    <h3>Jose dos Santos</h3>
-                                    <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
-                                </div>
-                                <div class="stars-card">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="content-card-swiper">
-                                <img src="img/profile-pic.png" alt="">
-                                <div class="text-description">
-                                    <h3>Gustavo Oliveira</h3>
-                                    <p>Como especialistas apaixonados por paisagismo residencial e empresarial, nós oferecemos soluções únicas e completamente</p>
-                                </div>
-                                <div class="stars-card">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                    <img src="img/estrela.png" alt="star">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>   
+            <div class="contact-icon">
+                <ul class="ul-icons">
+                    <li class="li-icons"><a href="https://wa.me/5545998233842" target="_blank"><ion-icon
+                                id="whatsapp" name="logo-whatsapp"></ion-icon></ion-icon></a></li>
+                    <li class="li-icons"><a href="https://www.facebook.com/gustavo.biagi.1"
+                            target="_blank"><ion-icon id="face" name="logo-facebook"></ion-icon></a></li>
+                    <li class="li-icons"><a href="https://www.instagram.com/oliveiragustavo517/"
+                            target="_blank"><ion-icon id="insta" name="logo-instagram"></ion-icon></a></li>
+                    <li class="li-icons"><a href="#"><ion-icon id="linke" name="logo-linkedin"></ion-icon></a></li>
+                </ul>
             </div>
-        </section>
-        <section class="section-contact" id="contact">
-            <div class="content-contact">
-                
+            <div class="map-div">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.263483825443!2d-53.49824848436073!3d-24.957148620496486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d6b44d94eef3%3A0x99bc33d120f07a2!2sR.%20Cuiab%C3%A1%2C%206241%20-%20Alto%20Alegre%2C%20Cascavel%20-%20PR%2C%2085805-260!5e0!3m2!1spt-BR!2sbr!4v1675815264450!5m2!1spt-BR!2sbr"
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-        </section>
+            <div class="content-contact-footer">
+                <div class="contact-box-one box-footer">
+                    <h3>Serviços Listados</h3>
+                    <p><a href="#natural">Jardim Natural</a></p>
+                    <p><a href="#artificial">Jardim Artificial</a></p>
+                    <p><a href="#musgo">Jardim Musgo Moss</a></p>
+                    <p><a href="#preservado">Jardim Preservado</a></p>
+                    <p>Jardims Verticais</p>
+                    <p>Serviço de Roçada</p>
+                    <p>Arvores, flores, arranjos, ortas etc.</p>
+                </div>
+                <div class="contact-box-two box-footer">
+                    <h3>Sobre Nós</h3>
+                    <p><a href="#about"> Somos a Lótus uma empresa de paisagismo e conservação com mais de 4 anos de experiência no mercado.</a></p>
+                    <p><a href="#clientes">Nossos Clientes</a></p>
+                </div>
+                <div class="contact-box-three box-footer">
+                    <h3>Aguardamos seu Contato</h3>
+                    <p>Telefone: (45) 99940-1674</p>
+                    <p>E-mail: leonardo.enninger@hotmail.com</p>
+                    <p>Cascavel-PR</a></p>
+                    <p>Rua: Não sei numero 100 - Alto Alegre</p> 
+                </div>
+            </div>
+        </footer>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://kit.fontawesome.com/13093e9fa9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
