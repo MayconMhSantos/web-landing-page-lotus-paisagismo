@@ -120,6 +120,7 @@ header nav ul li a:hover{
     justify-content: center;
     margin-left: 5%;
     cursor: default;
+    line-height: 1.5;
 }
 .section-home .content-home h1{
     color: white;
@@ -137,8 +138,9 @@ header nav ul li a:hover{
     font-size: 2.8rem;
 }
 .section-home .content-home input{
-    position: absolute;
-    bottom: 240px;
+    /* position: absolute; */
+    /* bottom: 240px; */
+    margin-top: 75px;
     padding: 2rem 3.5rem 2rem 3.5rem;
     font-size: 2.1rem;
     border-radius: 17px;
