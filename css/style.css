@@ -323,7 +323,8 @@ header nav ul li a:hover{
     display: flex;
     justify-content: center;
     font-size: 12vh;
-    line-height: 80px;
+    /* line-height: 80px; */
+    line-height: 67%;
     color: #fff;
 }
 
@@ -583,7 +584,7 @@ header nav ul li a:hover{
     display: flex;
     justify-content: center;
     font-size: 12vh;
-    line-height: 80px;
+    line-height: 67%;
     color: #fff;
 }
 
@@ -1132,7 +1133,7 @@ padding: 7px;
     display: flex;
     justify-content: center;
     font-size: 12vh;
-    line-height: 80px;
+    line-height: 67%;
     color: #ffffff;
     /* color: var(--white--color); */
     text-transform: uppercase;
