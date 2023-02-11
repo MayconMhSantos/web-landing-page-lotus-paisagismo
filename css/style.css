@@ -109,7 +109,7 @@ body{
 
 .section-home{
     height: 100vh;
-    background-image: linear-gradient(to right,rgba(176, 221, 188, 0.952),rgba(34, 136, 68, 0.493),rgba(6, 26, 6, 0.644)),url("../img/background-home.png");
+    background-image: linear-gradient(to right,rgba(176, 221, 188, 0.952),rgba(34, 136, 68, 0.493),rgba(6, 26, 6, 0.644)),url("../img/background-home.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -367,7 +367,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right,rgba(171, 207, 178, 0.199),rgba(0, 0, 0, 0.856)),url("../img/background-paralax-01.jpg");
+    background-image: linear-gradient(to right,rgba(171, 207, 178, 0.199),rgba(0, 0, 0, 0.856)),url("../img/background-paralax-01.webp");
 }
 
 .section-services .garden-natural h2{
@@ -631,7 +631,7 @@ body{
     box-shadow: inset 10px 15px 16px rgba(0, 0, 0, 0.9) ;
 }
 .section-services .garden-projetos{
-    background-image: linear-gradient(to right,rgba(116, 116, 116, 0.082),rgba(0, 0, 0, 0.589)),url("../img/background-paralax-01.jpg");
+    background-image: linear-gradient(to right,rgba(116, 116, 116, 0.082),rgba(0, 0, 0, 0.589)),url("../img/background-paralax-01.webp");
 }
 
 .section-services .garden-projetos h2{
@@ -739,7 +739,7 @@ body{
 }
 .content-card-swiper{
     border-radius: 12px;
-    background-image: linear-gradient(to right,rgba(23, 24, 23, 0.918),rgba(28, 29, 28, 0.938)),url("../img/background-2.png");
+    background-image: linear-gradient(to right,rgba(23, 24, 23, 0.918),rgba(28, 29, 28, 0.938)),url("../img/background-2.webp");
     box-shadow: 15px 7px 12px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -1177,7 +1177,7 @@ padding: 7px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-image: linear-gradient(to right,rgba(73, 73, 73, 0.137),rgba(0, 0, 0, 0.514)),url("../img/background-paralax-01.jpg");
+    background-image: linear-gradient(to right,rgba(73, 73, 73, 0.137),rgba(0, 0, 0, 0.514)),url("../img/background-paralax-01.webp");
 }
 .garden-form h2{
     position: absolute;
@@ -1426,7 +1426,7 @@ padding: 7px;
         align-items: center;
         /* flex-direction: column; */
         justify-content: center;
-        background-image: linear-gradient(to right,rgba(73, 73, 73, 0.137),rgba(0, 0, 0, 0.514)),url(../img/background-paralax-01.jpg);
+        background-image: linear-gradient(to right,rgba(73, 73, 73, 0.137),rgba(0, 0, 0, 0.514)),url(../img/background-paralax-01.webp);
     }
     .garden-form h2 {
         font-size: 8vh;
