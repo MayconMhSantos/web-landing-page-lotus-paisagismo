@@ -631,7 +631,7 @@ body{
     box-shadow: inset 10px 15px 16px rgba(0, 0, 0, 0.9) ;
 }
 .section-services .garden-projetos{
-    background-image: linear-gradient(to right,rgba(116, 116, 116, 0.082),rgba(0, 0, 0, 0.589)),url("/img/background-paralax-01.webp");
+    background-image: linear-gradient(to right,rgba(116, 116, 116, 0.082),rgba(0, 0, 0, 0.589)),url("img/background-paralax-01.webp");
 }
 
 .section-services .garden-projetos h2{
