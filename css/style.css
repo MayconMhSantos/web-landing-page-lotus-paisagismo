@@ -683,7 +683,7 @@ body{
 }
 
 .img-planta-projeto .content-img-planta p{
-    width: 72vw;
+    width: 87vw;
     font-size: 1.9rem;
     text-align: justify;
 }
@@ -1259,7 +1259,7 @@ padding: 7px;
     .img-planta-projeto .content-img-planta img{
         padding-top: 50px;
         padding-bottom: 50px;
-        max-width: 77vw;
+        max-width: 90vw;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -1278,7 +1278,7 @@ padding: 7px;
         color: var(--secondary--color);
     }
     .text-slider p{
-        width: 72vw;
+        width: 87vw;
         font-size: 1.9rem;
         text-align: justify;
         color: var(--secondary--color);
@@ -1361,14 +1361,14 @@ padding: 7px;
         padding-top: 50px;
     }
     .section-about .content-about .presentation-text p {
-        width: 77vw;
+        width: 87vw;
     }
     .section-about .about-frase-a h3 {
-        width: 77vw;
+        width: 87vw;
     }
     .section-services .garden-natural h2 {
-        font-size: 6.5vh;
-        line-height: 67%;
+        font-size: 10vh;
+        line-height: 66%;
 
     }
     .content-slider {
@@ -1385,6 +1385,13 @@ padding: 7px;
         align-items: center;
         justify-content: center;
     }
+
+    .about-card{
+        max-width: 315px;
+        min-width: 315px;
+        max-height: 2250px;
+        min-height: 225px;
+    }
     .frase-b h3 {
         width: 80vw;
     }
@@ -1394,8 +1401,8 @@ padding: 7px;
         color: var(--secondary--color);
     }
     .section-services .garden-projetos h2 {
-        font-size: 6vh;
-        line-height: 67%;
+        font-size: 10vh;
+        line-height: 66%;
     }
     .garden-img-projetos {
         height: 18vh;
@@ -1419,8 +1426,8 @@ padding: 7px;
         background-image: linear-gradient(to right,rgba(73, 73, 73, 0.137),rgba(0, 0, 0, 0.514)),url(../img/background-paralax-01.jpg);
     }
     .garden-form h2 {
-        font-size: 5.5vh;
-        line-height: 36px;
+        font-size: 8vh;
+        line-height: 65%;
     }
     .orcamento-content h3 {
         width: 88vw !important;
@@ -1430,7 +1437,7 @@ padding: 7px;
         line-height: 1;
     }
     .orcamento-content p {
-        width: 73%;
+        width: 87vw;
         font-size: 1.9rem;
         color: var(--secondary--color);
         text-align: justify;
