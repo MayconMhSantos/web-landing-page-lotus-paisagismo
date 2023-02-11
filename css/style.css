@@ -109,7 +109,7 @@ body{
 
 .section-home{
     height: 100vh;
-    background-image: linear-gradient(to right,rgba(176, 221, 188, 0.952),rgba(34, 136, 68, 0.493),rgba(6, 26, 6, 0.644)),url("../img/background-home.webp");
+    background-image: linear-gradient(to right,rgba(155, 253, 160, 0.664),rgba(16, 230, 87, 0.521),rgba(6, 26, 6, 0.644)),url("../img/background-home.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -631,7 +631,8 @@ body{
     box-shadow: inset 10px 15px 16px rgba(0, 0, 0, 0.9) ;
 }
 .section-services .garden-projetos{
-    background-image: linear-gradient(to right,rgba(116, 116, 116, 0.082),rgba(0, 0, 0, 0.589)),url("img/background-paralax-01.webp");
+    background-image: url(../img/background-paralax-01.webp);
+    /* background-image: linear-gradient(to right,rgba(116, 116, 116, 0.082),rgba(0, 0, 0, 0.589)),url("img/background-paralax-01.webp"); */
 }
 
 .section-services .garden-projetos h2{
