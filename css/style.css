@@ -148,13 +148,12 @@ body{
     font-size: 2.5rem;
     margin-left: 7%;
 }
-.section-home .content-home input{
-    margin-left: 7%;
-    /* position: absolute; */
-    /* bottom: 240px; */
-    margin-top: 50px;
-    padding: 2rem 3.5rem 2rem 3.5rem;
-    font-size: 2rem;
+.section-home .content-home .btn-home-orcamento{
+    width: 280px;
+    margin-left: 40px;
+    margin-top: 35px;
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 1.5rem;
     border-radius: 17px;
     border: none;
     color: rgb(3, 36, 3);
@@ -163,7 +162,7 @@ body{
     cursor: pointer;
     transition: all .3s;
 }
-.section-home .content-home input:hover{
+.section-home .content-home .btn-home-orcamento:hover{
     transform: scale(1.03);
     transition: all .3s;
     background-color: var(--primary--color);
@@ -1352,10 +1351,14 @@ padding: 7px;
         font-size: 1.9rem;
         text-align: left;
     }
-    .section-home .content-home input {
-        margin-top: 45px;
-        padding: 2rem;
+    .section-home .content-home  .btn-home-orcamento{
+        width: 250px;
+        margin-left: 20px;
+        margin-top: 35px;
+        padding: 1.5rem 1rem 1.5rem 1rem;
         font-size: 1.5rem;
+
+        transition: all .3s;
     }
     .section-about .content-about .presentation-text {
         padding-top: 50px;
@@ -1430,8 +1433,8 @@ padding: 7px;
         line-height: 65%;
     }
     .orcamento-content h3 {
-        width: 88vw !important;
-        font-size: 2.4rem;
+        width: 90vw !important;
+        font-size: 2.9rem;
         color: var(--primary--color);
         text-align: center;
         line-height: 1;
@@ -1532,5 +1535,16 @@ padding: 7px;
     .content-slider {
 
         margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 414px){
+    .section-services .garden-natural h2,
+        .section-services .garden-projetos h2{
+        font-size: 7rem;
+    }
+
+    .garden-form h2{
+        font-size: 5.7rem;
     }
 }
