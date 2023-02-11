@@ -367,7 +367,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right,rgba(171, 207, 178, 0.199),rgba(0, 0, 0, 0.856)),url("/img/background-paralax-01.webp");
+    background-image: linear-gradient(to right,rgba(171, 207, 178, 0.199),rgba(0, 0, 0, 0.856));
 }
 
 .section-services .garden-natural h2{
