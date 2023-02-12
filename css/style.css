@@ -352,7 +352,7 @@ body{
 
 
 /* Garden Natural */
-.garden-img{
+/* .garden-img{
     position: relative;
     width: 100vw;
     height: 23vh;
@@ -368,9 +368,9 @@ body{
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right,rgba(171, 207, 178, 0.199),rgba(0, 0, 0, 0.856));
-}
+} */
 
-.section-services .garden-natural h2{
+/* .section-services .garden-natural h2{
     cursor: default;
     position: absolute;
     text-align: center;
@@ -380,10 +380,10 @@ body{
     display: flex;
     justify-content: center;
     font-size: 12vh;
-    /* line-height: 80px; */
+    line-height: 80px;
     line-height: 67%;
     color: #fff;
-}
+} */
 
 
 /* SLIDER */
@@ -619,7 +619,7 @@ body{
     cursor: default;
 }
 
-.garden-img-projetos{
+/* .garden-img-projetos{
     position: relative;
     width: 100vw;
     height: 23vh;
@@ -631,11 +631,11 @@ body{
     box-shadow: inset 10px 15px 16px rgba(0, 0, 0, 0.9) ;
 }
 .section-services .garden-projetos{
-    /* background-image: url(../img/background-paralax-01.webp); */
-    /* background-image: linear-gradient(to right,rgba(116, 116, 116, 0.082),rgba(0, 0, 0, 0.589)),url("img/background-paralax-01.webp"); */
-}
+    background-image: url(../img/background-paralax-01.webp);
+    background-image: linear-gradient(to right,rgba(116, 116, 116, 0.082),rgba(0, 0, 0, 0.589)),url("img/background-paralax-01.webp");
+} */
 
-.section-services .garden-projetos h2{
+/* .section-services .garden-projetos h2{
     position: absolute;
     left: 0;
     right: 0;
@@ -645,7 +645,7 @@ body{
     font-size: 12vh;
     line-height: 67%;
     color: #fff;
-}
+} */
 
 
 .img-planta-projeto{
@@ -1162,7 +1162,7 @@ padding: 7px;
     line-height: 2;
     color: var(--gray--color);
 }
-.garden-img-form{
+/* .garden-img-form{
     position: relative;
     width: 100vw;
     height: 23vh;
@@ -1178,16 +1178,16 @@ padding: 7px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* background-image: linear-gradient(to right,rgba(73, 73, 73, 0.137),rgba(0, 0, 0, 0.514)),url("/img/background-paralax-01.webp"); */
-}
-.garden-form h2{
+    background-image: linear-gradient(to right,rgba(73, 73, 73, 0.137),rgba(0, 0, 0, 0.514)),url("/img/background-paralax-01.webp");
+} */
+/* .garden-form h2{
     position: absolute;
     bottom: 0;
     font-size: 12vh;
     line-height: 67%;
     color: #ffffff;
     text-transform: uppercase;
-}
+} */
 
 #face, #insta, #linke, #git, #whatsapp{
     color: rgb(240, 240, 240);
@@ -1229,6 +1229,29 @@ padding: 7px;
 
 .no-cursor{
     cursor: default;
+}
+
+.paralax-content{
+    position: relative;
+    width: 100vw;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url(/img/background-paralax-01.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.paralax-content h2{
+    text-align: center;
+    position: absolute;
+    font-size: 6.5rem;
+    color: white;
+    bottom: -16px;
 }
 
 @media (max-width: 838Px){
@@ -1288,9 +1311,10 @@ padding: 7px;
         height: 22vh;
     }
 
-    .garden-form h2{
+    /* .garden-form h2{
         font-size: 10vh;
-    }
+    } */
+
 
     .box-map-social,
     .box-list-company{
@@ -1370,11 +1394,11 @@ padding: 7px;
     .section-about .about-frase-a h3 {
         width: 87vw;
     }
-    .section-services .garden-natural h2 {
+    /* .section-services .garden-natural h2 {
         font-size: 10vh;
         line-height: 66%;
 
-    }
+    } */
     .content-slider {
         display: flex;
         align-items: center;
@@ -1404,10 +1428,10 @@ padding: 7px;
         font-size: 2.2rem;
         color: var(--secondary--color);
     }
-    .section-services .garden-projetos h2 {
+    /* .section-services .garden-projetos h2 {
         font-size: 10vh;
         line-height: 66%;
-    }
+    } */
     .garden-img-projetos {
         height: 18vh;
     }
@@ -1421,18 +1445,18 @@ padding: 7px;
         width: 90vw;
         font-size: 3.5rem;
     }
-    .garden-form {
+    /* .garden-form {
         height: 18vh;
         display: flex;
         align-items: center;
-        /* flex-direction: column; */
+        flex-direction: column;
         justify-content: center;
         background-image: linear-gradient(to right,rgba(73, 73, 73, 0.137),rgba(0, 0, 0, 0.514)),url(/img/background-paralax-01.webp);
-    }
-    .garden-form h2 {
+    } */
+    /* .garden-form h2 {
         font-size: 8vh;
         line-height: 65%;
-    }
+    } */
     .orcamento-content h3 {
         width: 90vw !important;
         font-size: 2.9rem;
@@ -1540,12 +1564,12 @@ padding: 7px;
 }
 
 @media (max-width: 414px){
-    .section-services .garden-natural h2,
+    /* .section-services .garden-natural h2,
         .section-services .garden-projetos h2{
         font-size: 7rem;
-    }
+    } */
 
-    .garden-form h2{
+    /* .garden-form h2{
         font-size: 5.7rem;
-    }
+    } */
 }
