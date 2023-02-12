@@ -426,7 +426,6 @@ body{
 .text-slider h2{
     font-size: 4.7rem;
     color: var(--secondary--color--color);
-    margin-top: 60px;
 }
 .text-slider h3{
     line-height: 3;
@@ -623,7 +622,7 @@ body{
     justify-content: center;
     background-color: rgb(15, 34, 4);
     margin-top: 15px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
 
 .frase-b h3 {
@@ -689,7 +688,6 @@ body{
     text-align: center;
     margin-bottom: 10px;
     line-height: 2.2;
-    margin-top: 50px;
     /* padding-bottom: 1.5rem ; */
 }
 
@@ -1264,6 +1262,7 @@ padding: 7px;
     background-attachment: fixed;
     width: 100vw;
     height: 22vh;
+    margin-bottom: 50px;
 }
 
 .foreground h2{
@@ -1277,6 +1276,36 @@ padding: 7px;
     right: 0;
     text-align: center;
 }
+
+@media (max-width: 690px){
+    .foreground h2{
+        font-size: 8rem;
+        line-height:.66;
+    }
+}
+
+@media (max-width: 557px){
+    .foreground h2{
+        font-size: 7rem;
+        line-height:.65;  
+    }
+    .foreground {
+        height: 19vh;
+    }
+}
+
+@media (max-width: 486px){
+    .foreground h2{
+        font-size: 5.2rem;
+        line-height:.65;
+    }
+    .foreground {
+        height: 16vh;
+    }
+}
+
+
+
 
 @media (max-width: 838Px){
 
@@ -1407,7 +1436,7 @@ padding: 7px;
     .section-home .content-home p {
         max-width: 260px;
         font-size: 1.9rem;
-        text-align: justify;
+        text-align: start;
         margin-left: 4%;
 
     }
@@ -1498,7 +1527,7 @@ padding: 7px;
         color: var(--primary--color);
         text-align: center;
         line-height: 1;
-        margin-top: 75px;
+        margin-top: 15px;
     }
     .orcamento-content p {
         width: 87vw;
