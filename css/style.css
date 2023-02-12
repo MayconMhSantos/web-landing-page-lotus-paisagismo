@@ -1242,9 +1242,9 @@ padding: 7px;
 
     background-image: url(/img/background-paralax-01.webp);
     /* background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
-}
+    background-size: cover; */
+    background-attachment: fixed; 
+} 
 
 .paralax-content h2{
     text-align: center;
