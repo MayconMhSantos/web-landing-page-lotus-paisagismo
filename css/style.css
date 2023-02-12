@@ -1232,7 +1232,7 @@ padding: 7px;
 }
 
 .paralax-content{
-    position: relative;
+    /* position: relative; */
     width: 100vw;
     height: 18vh;
     display: flex;
@@ -1248,7 +1248,7 @@ padding: 7px;
 
 .paralax-content h2{
     text-align: center;
-    position: absolute;
+    /* position: absolute; */
     font-size: 6.5rem;
     color: white;
     bottom: -16px;
