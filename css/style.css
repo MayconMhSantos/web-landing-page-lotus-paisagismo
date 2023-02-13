@@ -26,30 +26,47 @@ body{
     --gray--color:rgb(126, 126, 126);
     --detail--color:rgb(37, 37, 37);
 
-    --font--primary: "rosseta";
-    --font--secondary: "atlantic-corse";
-    --font--poppins: "atlantic-corse";
+    
+    --font--textos: "poppins";
+    --font--sub-titulos: "ElegantoSans";
+    --font--titulos: "Rantera";
+    --font--frases: "ElegantoSans";
+    --font--parallax: "Sandy";
+    --font--btn: "poppins";
+    --font-title-principal: "Rantera";
+    --font--sub-titulos-principal: "Sanseriffic";
+     
 }
-/* @font-face {
-    font-family: "rosseta";
-    src: url(/font/Rosseta.otf);
-}
+
 @font-face {
-    font-family: "atlantic-corse";
-    src: url(/font/Atlantic_Cruise-Demo.ttf);
+    font-family: "Qlassy";
+    src: url(../fonts/Qlassy.ttf);
 }
+
 @font-face {
-    font-family: "qlassy";
-    src: url(/font/Qlassy.ttf);
+    font-family: "Sandy";
+    src: url(../fonts/Sandy\ King.otf);
 }
+
 @font-face {
-    font-family: "romanica";
-    src: url(/font/Romanica.ttf);
+    font-family: "Sanseriffic";
+    src: url(../fonts/Sanseriffic.otf);
 }
+
 @font-face {
-    font-family: "sandy-king";
-    src: url(/font/Sandy\ King.otf);
-} */
+    font-family: "Rantera";
+    src: url(../fonts/Rantera.otf);
+}
+
+@font-face {
+    font-family: "Galgony";
+    src: url(../fonts/Galgony.ttf);
+}
+
+@font-face {
+    font-family: "ElegantoSans";
+    src: url(../fonts/ElegantoSans-Thin.ttf);
+}
 
 /* HEADER NAV */
 /* .nav-mobile{
@@ -131,6 +148,7 @@ body{
 .section-home .content-home h1{
     color: white;
     /* color: var(--primary--color); */
+    font-family: var(--font-title-principal);
     font-size: 14rem;
     line-height: 1;
     margin-left: 7%;
@@ -142,6 +160,7 @@ body{
     color: white;
     font-size: 5rem;
     margin-left: 7%;
+    font-family: var(--font--sub-titulos-principal);
     text-shadow: 3px 5px rgba(0, 0, 0, 0.5);
 }
 .section-home .content-home p{
@@ -149,7 +168,8 @@ body{
     color: white;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
     /* color: var(--primary--color); */
-    font-size: 2.6rem;
+    font-size: 2.4rem;
+    font-family: var(--font--textos);
     margin-left: 7%;
 }
 .section-home .content-home .btn-home-orcamento{
@@ -157,13 +177,14 @@ body{
     margin-left: 40px;
     margin-top: 35px;
     padding: 2rem 2rem 2rem 2rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     border-radius: 17px;
     border: none;
     color: rgb(3, 36, 3);
-    font-weight: 600;
     text-transform: uppercase;
     box-shadow: 7px 14px rgba(0, 0, 0, 0.5);
+    font-family: "poppins";
+    font-weight: 600;
     cursor: pointer;
     transition: all .3s;
 }
@@ -208,7 +229,7 @@ body{
     header .nav-principal ul li a{
        font-size: 1.9rem;
        transition: all .3s;
-    
+        font-family: "poppins";
        color: var(--primary--color)
     }
     header .nav-principal ul li a:hover{
@@ -266,6 +287,7 @@ body{
     font-size: 4.7rem;
     line-height: 1;
     text-align: left;
+    font-family: var(--font--titulos);
     color: var(--secondary--color--color);
 }
 .section-about .content-about .presentation-text h3{
@@ -273,12 +295,15 @@ body{
     font-size: 2.5rem;
     text-align: left;
     color: var(--secondary--color);
+    font-family: var(--font--sub-titulos);
 }
 .section-about .content-about .presentation-text p{
     width: 37vw;
     text-align: justify;
     font-size: 1.8rem;
     color: var(--secondary--color--color);
+    font-family: var(--font--textos);
+
 }
 
 /* About Frase */
@@ -289,38 +314,42 @@ body{
     font-size: 2.8rem;
     font-weight: 600;
     text-align: center;
-    letter-spacing: -1.6px;
+    letter-spacing: -1px;
     color: var(--secondary--color);
     cursor: default;
+    font-family: var(--font--frases);
 }
 
 /* About Card's */
 
 .about-skills{
-    max-width: 1000px;
+    display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-top: 75px;
+    margin-top: 95px;
 }
 .content-cards{
-    max-width: 955px;
+    max-width: 77vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    /* min-width: 1127px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 12px;
-    margin-bottom: 80px;
+    margin-bottom: 80px; */
 }
 .about-card{
-    max-width: 265px;
-    min-width: 265px;
-    max-height: 225px;
-    min-height: 225px;
+    width: 300px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     cursor: default;
 }
 .about-card img{
@@ -332,11 +361,17 @@ body{
     font-weight: 600;
     padding: 1rem;
     color: var(--secondary--color);
+    font-family: var(--font--sub-titulos);
 }
 .about-card p{
-    font-size: 1.9rem;
+    height: 115px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.8rem;
     padding: 1rem;
     color: var(--secondary--color--color);
+    font-family: var(--font--textos);
 }
 
 /*  Services All */
@@ -426,16 +461,20 @@ body{
 .text-slider h2{
     font-size: 4.7rem;
     color: var(--secondary--color--color);
+    font-family: var(--font--titulos);
 }
 .text-slider h3{
-    line-height: 3;
-    font-size: 2.5rem;
+    line-height: 2.5;
+    letter-spacing: -1px;
+    font-size: 2.8rem;
     color: var(--secondary--color);
+    font-family: var(--font--sub-titulos);
 }
 .text-slider p{
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     text-align: justify;
     color: var(--secondary--color);
+    font-family: var(--font--textos);
 }   
 .slider{
     width: 435px;
@@ -628,11 +667,11 @@ body{
 .frase-b h3 {
     width: 77vw;
     text-align: center;
-    padding: 35px 22px 35px 22px;
+    padding: 35px 7px 35px 7px;
     font-size: 2.1rem;
     font-weight: 200;
     text-align: center;
-
+    font-family: var(--font--frases);
     color: var(--white--color);
     cursor: default;
 }
@@ -684,25 +723,27 @@ body{
 }
 .img-planta-projeto .content-img-planta h2{
     width: 80vw;
+    font-family: var(--font--titulos);
     font-size: 4.7rem;
     text-align: center;
     margin-bottom: 10px;
-    line-height: 2.2;
-    /* padding-bottom: 1.5rem ; */
+    line-height: 1;
+
 }
 
 .img-planta-projeto .content-img-planta h3{
     width: 80vw;
     font-size: 2.5rem;
     text-align: center;
-
-    /* padding-bottom: 1.5rem ; */
-
+    line-height: 1.5;
+    font-family: var(--font--sub-titulos);
+    padding-bottom: 1.5rem ;
 }
 
 .img-planta-projeto .content-img-planta p{
-    width: 87vw;
+    width: 67vw;
     font-size: 1.9rem;
+    font-family: var(--font--textos);
     text-align: justify;
 }
 
@@ -781,16 +822,19 @@ body{
     font-size: 3rem;
     text-align: center;
     padding: 8px;
-    color: rgb(131, 131, 131);
+    color: rgb(247, 248, 247);
+    font-family: var(--font--titulos);
     /* color: var(--white--color); */
 }
 
 .swiper-slide .content-card-swiper .text-description p{
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     text-align: center;
     padding: 8px;
     margin: 0 15px 0 15px;
-    color: var(--white--color);
+    color: #979797;
+    /* color: var(--white--color); */
+    font-family: "poppins";
 }
 
 .swiper-slide .content-card-swiper .stars-card{
@@ -907,6 +951,7 @@ body{
     color: var(--primary--color);
     text-align: center;
     line-height: 2;
+    font-family: var(--font--titulos);
 }
 .orcamento-content p{
     width: 72%;
@@ -914,6 +959,7 @@ body{
     color: var(--secondary--color);
     text-align: justify;
     padding-bottom: 50px;
+    font-family: var(--font--textos);
 }
 
 form {
@@ -1146,7 +1192,7 @@ padding: 7px;
 .box-map-social,
 .box-list-company{
     position: relative;
-    width: 80%;
+    width: 90vw;
     display: flex;
     justify-content: space-between;
 }
@@ -1157,8 +1203,9 @@ padding: 7px;
     padding: 0px 0 25px 0;
 }
 .box-footer{
-    padding: 17px;
-    width: 320px;
+    position: relative;
+    padding: 30px;
+    width: 315px;
 }
 .box-footer p ion-icon {
     color: #b0f5a7;
@@ -1167,6 +1214,7 @@ padding: 7px;
 .box-footer h3{
     font-size: 2.1rem;
     list-style: none;
+    font-family: var(--font--frases);
     text-decoration: none !important;
     font-style: none !important;
     color: var(--white--color); 
@@ -1174,11 +1222,19 @@ padding: 7px;
 .box-footer a{   
     font-style: none !important;
     color: var(--gray--color); 
+    font-family: var(--font--textos);
 }
 .box-footer p{   
     font-size: 1.7rem;
     line-height: 2;
     color: var(--gray--color);
+    font-family: var(--font--textos);
+}
+.box-footer p ion-icon,
+.box-footer a ion-icon{
+    position: absolute;
+    padding-top: 7px;
+    left: -0px;
 }
 /* .garden-img-form{
     position: relative;
@@ -1266,15 +1322,23 @@ padding: 7px;
 }
 
 .foreground h2{
-    font-size: 10rem;
+    font-size: 13rem;
     color: white;
-    line-height: .67;
+    line-height: .62;
     position: absolute;
     text-transform: uppercase;
+    letter-spacing: 7px;
     bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
+    font-family: var(--font--parallax);
+}
+
+@media (max-width: 830px){
+
+
+
 }
 
 @media (max-width: 690px){
@@ -1308,6 +1372,17 @@ padding: 7px;
 
 
 @media (max-width: 838Px){
+
+
+    .frase-b h3,
+    .section-about .about-frase-a h3 {
+        width: 87vw;
+    }
+
+    .orcamento-content p,
+    .img-planta-projeto .content-img-planta p {
+        width: 87vw;
+    }
 
     .section-home .content-home h1{
         padding-top: 75px;
@@ -1347,12 +1422,9 @@ padding: 7px;
     .text-slider h2{
         font-size: 4.7rem;
         color: var(--secondary--color--color);
+        font-family: var(--font--titulos);
     }
-    .text-slider h3{
-        line-height: 3;
-        font-size: 2.5rem;
-        color: var(--secondary--color);
-    }
+    
     .text-slider p{
         width: 87vw;
         font-size: 1.9rem;
@@ -1363,11 +1435,6 @@ padding: 7px;
     .garden-form{
         height: 22vh;
     }
-
-    /* .garden-form h2{
-        font-size: 10vh;
-    } */
-
 
     .box-map-social,
     .box-list-company{
