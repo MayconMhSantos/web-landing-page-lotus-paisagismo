@@ -1149,6 +1149,13 @@ padding: 7px;
 
 }
 
+.hr-footer{
+    border: none;
+    width: 100vw;
+    height: 4px;
+    background-color: #B0F5A7;
+}
+
 .footer-contact .map-div iframe{
     /* position: absolute; */
     width: 100vw;
@@ -1192,13 +1199,12 @@ padding: 7px;
 .box-map-social,
 .box-list-company{
     position: relative;
-    width: 90vw;
+    width: 93vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-/* .box-map-social{
-    padding-bottom: 25px;
-} */
+
 .box-list-company{
     padding: 0px 0 25px 0;
 }
@@ -1209,10 +1215,10 @@ padding: 7px;
 }
 .box-footer p ion-icon {
     color: #b0f5a7;
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 .box-footer h3{
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     list-style: none;
     font-family: var(--font--frases);
     text-decoration: none !important;
@@ -1224,14 +1230,19 @@ padding: 7px;
     color: var(--gray--color); 
     font-family: var(--font--textos);
 }
+
 .box-footer p{   
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     line-height: 2;
     color: var(--gray--color);
     font-family: var(--font--textos);
 }
-.box-footer p ion-icon,
-.box-footer a ion-icon{
+.box-footer p  a ion-icon{
+    position: absolute;
+    padding-top: 7px;
+    left: -0px;
+}
+.box-footer p ion-icon{
     position: absolute;
     padding-top: 7px;
     left: -0px;
@@ -1407,6 +1418,7 @@ padding: 7px;
         flex-direction: column;
     }
 
+
     .img-planta-projeto .content-img-planta img{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -1441,12 +1453,18 @@ padding: 7px;
         position: relative;
         width: 90%;
         display: flex;
+        /* flex-direction: column; */
         align-items: center;
         justify-content: center;
     }
 
     .form-control input {
         width: 66vw !important;
+    }
+
+    .ul-icons{
+        display: flex;
+        flex-direction: column;
     }
         
 
@@ -1637,17 +1655,6 @@ padding: 7px;
         align-items: center;
         justify-content: center;
     }
-    .box-list-company{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .contact-box-two{
-        padding: 25px 0 25px 0;
-    }
-
-
     .create-by{
         width: 100%;
         padding: 1rem;
@@ -1695,13 +1702,14 @@ padding: 7px;
     }
 }
 
-@media (max-width: 414px){
-    /* .section-services .garden-natural h2,
-        .section-services .garden-projetos h2{
-        font-size: 7rem;
-    } */
+@media (max-width: 701px){
+    .box-footer {
+        position: relative;
+        padding: 25px;
+        width: 280px;
+    }
 
-    /* .garden-form h2{
-        font-size: 5.7rem;
-    } */
+    .box-map-social, .box-list-company {
+        justify-content: center;
+    }
 }
