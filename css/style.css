@@ -121,6 +121,7 @@ body{
 
 .section-home{
     height: 100vh;
+    cursor: default;
     /* background-image: linear-gradient(to right,rgba(6, 92, 20, 0.692),rgba(53, 167, 43, 0.897),rgba(16, 189, 16, 0.062)),url("../img/background-home.webp"); */
     background-image: linear-gradient(to right,rgba(0, 107, 18, 0.747),rgba(10, 99, 2, 0.726),rgba(3, 92, 3, 0.199)),url("../img/background-home.webp");
     background-repeat: no-repeat;
@@ -344,7 +345,7 @@ body{
     margin-top: 95px;
 }
 .content-cards{
-    max-width: 77vw;
+    max-width: 60vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -650,6 +651,7 @@ body{
 }
 .img-planta-projeto .content-img-planta h2{
     width: 80vw;
+    cursor: default;
     font-family: var(--font--titulos);
     font-size: 4.7rem;
     text-align: center;
@@ -659,6 +661,7 @@ body{
 }
 .img-planta-projeto .content-img-planta h3{
     width: 80vw;
+    cursor: default;
     font-size: 2.5rem;
     text-align: center;
     line-height: 1.5;
@@ -666,6 +669,7 @@ body{
     padding-bottom: 1.5rem ;
 }
 .img-planta-projeto .content-img-planta p{
+    cursor: default;
     width: 67vw;
     font-size: 1.9rem;
     font-family: var(--font--textos);
@@ -1063,6 +1067,7 @@ form {
     margin-bottom: 50px;
 }
 .foreground h2{
+    cursor: default;
     font-size: 13rem;
     color: white;
     position: absolute;
