@@ -981,6 +981,8 @@ form {
     position: relative;
     padding: 30px;
     width: 315px;
+    margin-top: 30px;
+    min-height: 200px;
 }
 .box-footer p ion-icon {
     color: #b0f5a7;
@@ -992,7 +994,12 @@ form {
     font-family: var(--font--frases);
     text-decoration: none !important;
     font-style: none !important;
-    color: var(--white--color); 
+    color: var(--white--color);
+    /*////////////////////////*/
+    position: absolute;
+    top: -5px;
+    left: 2px;
+
 }
 .box-footer a{   
     font-style: none !important;
