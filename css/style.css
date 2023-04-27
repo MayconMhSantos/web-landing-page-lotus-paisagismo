@@ -281,7 +281,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     gap: 7%;
-    margin: 150px 0 75px 0;
+    margin: 150px 0 150px 0;
     cursor: default;
 }
 .section-about .content-about img{
@@ -333,6 +333,7 @@ body{
     color: var(--secondary--color);
     cursor: default;
     font-family: var(--font--frases);
+    margin: 25px 0 50px 0;
 }
 
 /* About Card's */
@@ -350,7 +351,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 100px;
 }
 .about-card{
     width: 245px;
@@ -418,7 +419,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     gap: 100px;
-    margin-bottom: 75px;
+    margin: 90px 0 90px 0;
 }
 .content-slider .text-slider {
     width: 345px;
@@ -655,7 +656,7 @@ body{
     font-family: var(--font--titulos);
     font-size: 4.7rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 75px 0 10px 0;
     line-height: 1;
 
 }
@@ -794,6 +795,7 @@ body{
     text-align: center;
     line-height: 2;
     font-family: var(--font--titulos);
+    margin: 50px 0 10px 0;
 }
 .orcamento-content p{
     width: 72%;
@@ -942,12 +944,30 @@ form {
 .ul-icons-box-one{
     display: flex;
 }
+.contact-icon{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
 .contact-icon .ul-icons{
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    height: 120px;
+    height: 120px; */
 }
+
+.contact-icon h3{
+    font-size: 2.2rem;
+    list-style: none;
+    font-family: var(--font--frases);
+    text-decoration: none !important;
+    font-style: none !important;
+    color: var(--white--color);
+    position: absolute;
+    top: -5px;
+    left: 2px;
+}
+
 .ul-icons .li-icons{
     position: relative;
     list-style: none;
@@ -959,23 +979,25 @@ form {
     padding: 1rem;
 }
 .content-contact-footer{
-    width: 100vw;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background: linear-gradient(90deg, #04172e 0%, #1f2b17 100%);
 }
 .box-map-social,
 .box-list-company{
+    width: 100vw;
+    margin: 0 auto;
     position: relative;
-    width: 93vw;
+    gap: 1%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .box-list-company{
-    padding: 0px 0 25px 0;
+    padding: 50px 5% 25px 5%;
 }
 .box-footer{
     position: relative;
@@ -989,7 +1011,7 @@ form {
     font-size: 1.9rem;
 }
 .box-footer h3{
-    font-size: 1.9rem;
+    font-size: 2.2rem;
     list-style: none;
     font-family: var(--font--frases);
     text-decoration: none !important;
@@ -1135,10 +1157,10 @@ form {
     .box-map-social,
     .box-list-company{
         position: relative;
-        width: 90%;
+
         display: flex;
-        /* flex-direction: column; */
-        align-items: center;
+        flex-direction: column;
+
         justify-content: center;
     }
     .form-control input {
@@ -1343,9 +1365,12 @@ form {
         padding: 25px;
         width: 280px;
     }
-    .box-map-social, .box-list-company {
-        justify-content: center;
+
+
+    .box-footer h3{
+        top: -35px;
     }
+
 }
 @media (max-width: 690px){
     .foreground h2{
